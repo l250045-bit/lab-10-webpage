@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sign Up</title>
+    <style>
+        /* Basic Styling for readability */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Container - Simple box */
+        div {
+            width: 350px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Buttons */
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #aaa;
+            background-color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Inputs and Select */
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        select {
+            width: calc(100% - 24px); /* Full width minus padding */
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding in the element's total width */
+        }
+
+        /* Labels and Hints */
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            color: #666;
+            margin-top: 3px;
+            margin-bottom: 15px;
+        }
+
+        /* Create Account Button - Simple Green */
+        form button {
+            background-color: black; /* Simple green */
+            color: white;
+            border: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Checkbox label */
+        span {
+            font-size: 12px;
+            color: black;
+        }
+        .pref {
+            font-size: 15px;
+        }
+        .daba {
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.png" alt="Description of image" width="500" height="1000">
+    <div>
+        <h1>
+            Sign up for Github
+        </h1>
+        <button>Continue with Google</button>
+        <button>Continue with Apple</button>
+
+        <p style="text-align: center; margin-top: 20px;">or</p>
+
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <p>
+                Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.
+            </p>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+            <p>
+                Username may only contain alphanumeric characters or single hyphens.
+            </p>
+
+            <label for="country">Your Country/Region</label>
+            <select id="country">
+                <option selected>Pakistan</option>
+                <option>USA</option>
+                <option>Canada</option>
+            </select>
+            <p>
+                For compliance reasons, we're required to collect country information.
+            </p>
+            <h1 class="pref">
+                Email prefernce 
+            </h1>
+            <div class="daba" style="margin-bottom: 15px;">
+                <input type="checkbox" id="email-pref">
+                <span for="email-pref">Receive occasional product updates and announcements</span>
+            </div>
+
+            <button type="submit">Create account ></button>
+        </form>
+
+        <p style="text-align: center; margin-top: 20px;">
+            By creating an account, you agree to the Terms of Service.
+        </p>
+    </div>
+</body>
+</html>
